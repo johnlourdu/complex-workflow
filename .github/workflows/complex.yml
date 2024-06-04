@@ -1,4 +1,4 @@
-name: Complex
+ name: Complex
 
 on: push
 
@@ -17,6 +17,6 @@ jobs:
     -run: date
   depends:
     needs: [ubuntu,windows,macos]
-   runs-on:
+   runs-on: macos-latest
     steps:
     -run: date
